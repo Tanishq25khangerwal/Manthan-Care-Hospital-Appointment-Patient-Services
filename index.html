@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#04100f" />
+  <title>MANTHAN PHARMA | Compassionate Hospital Care in Bengaluru</title>
+  <meta name="description" content="Find a doctor and book online at MANTHAN PHARMA in Bengaluru. Choose in-person or video appointments, manage your visits, and explore 24/7 emergency, diagnostics and pharmacy services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"><i></i></div>
+
+  <!-- ============ ICON SPRITE ============ -->
+  <svg aria-hidden="true" class="sprite" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M11 2v2M5 2v2M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M12 5.5c-2-2-5.6-1.5-6.6 1S6 12 7 16c.6 2.4 1 4 2 4s1.2-4 3-4 2 4 3 4 1.4-1.6 2-4c1-4 2.5-7 1.5-9.5S14 3.5 12 5.5Z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></symbol>
+    <symbol id="i-baby" viewBox="0 0 24 24"><path d="M9 12h.01M15 12h.01M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19.5 6.5a9 9 0 0 1 1.3 3.7 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.4-.4-1.4-1"/></symbol>
+    <symbol id="i-bone" viewBox="0 0 24 24"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M12 5v13"/></symbol>
+    <symbol id="i-pill" viewBox="0 0 24 24"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9 7H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v2a2 2 0 0 1-2 2M20 7h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v2a2 2 0 0 1-2 2"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h.01M15 8h.01M9 12h.01M15 12h.01M9 16h.01M15 16h.01M10 21v-3h4v3"/></symbol>
+    <symbol id="i-ear" viewBox="0 0 24 24"><path d="M6 8.5a6 6 0 1 1 12 0c0 3-2 4.5-4 6-1.5 1.1-2 2-2 3.5a2 2 0 0 1-4 0"/><path d="M10 9a2 2 0 1 1 4 0c0 1.5-1.5 2-1.5 3.5"/></symbol>
+    <symbol id="i-lungs" viewBox="0 0 24 24"><path d="M12 3v9M9 12H4.8a2 2 0 0 0-1.9 1.4L2 18a3 3 0 0 0 5.6 2.1L10 15V12M15 12h4.2a2 2 0 0 1 1.9 1.4L22 18a3 3 0 0 1-5.6 2.1L14 15V12"/></symbol>
+    <symbol id="i-ambulance" viewBox="0 0 24 24"><path d="M3 17V6h11v11M14 10h4l3 4v3M3 17h1M9 17h6M22 17h-1"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M7 9v4M5 11h4"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="13" height="12" rx="2"/><path d="m15 10 5-3v10l-5-3"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 8.5c0 4 3 6.5 6.5 6.5.7 0 1.5-.6 1.5-1.3 0-.4-1.7-1.4-2.1-1.2l-.9.9c-1-.4-2.3-1.7-2.7-2.7l.9-.9c.2-.4-.8-2.1-1.2-2.1-.8 0-1.4.8-1.4 1.5Z"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="m8.5 12.5-1.5 9 5-3 5 3-1.5-9"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/><path d="M7 15h10"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8ZM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8Z"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.5L3 20.8l1.5-4.7a8.5 8.5 0 1 1 16-4.3Z"/><path d="M8.8 8.5c.1 3.6 2.8 6.1 6.1 6.6.7.1 1.4-.5 1.4-1.2 0-.4-.5-.7-1.7-1.3-.4-.2-.9-.1-1.2.3l-.4.5c-1.1-.4-2.1-1.4-2.6-2.5l.5-.5c.3-.3.4-.7.2-1.1-.5-1.1-.8-1.7-1.2-1.7-.8 0-1.1.6-1.1.9Z"/></symbol>
+  </svg>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a class="topbar-item" href="tel:1800200300">
+        <svg class="ico"><use href="#i-phone"/></svg>
+        <span><strong>24/7 Emergency</strong> · 1800 200 300</span>
+      </a>
+      <span class="topbar-item topbar-mid">
+        <svg class="ico"><use href="#i-pin"/></svg>
+        <span>12 Wellness Avenue, Indiranagar, Bengaluru</span>
+      </span>
+      <span class="topbar-item topbar-end">
+        <svg class="ico"><use href="#i-shield"/></svg>
+        <span>NABH accredited · Cashless insurance</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="siteNav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Manthan Pharma home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M16 5v22M5 16h22" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">MANTHAN <em>PHARMA</em></span>
+          <span class="brand-sub">Hospital · Pharmacy · Diagnostics</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#specialties">Specialties</a>
+        <a class="nav-link" href="#doctors">Doctors</a>
+        <a class="nav-link" href="#facilities">Facilities</a>
+        <a class="nav-link" href="#packages">Packages</a>
+        <a class="nav-link" href="#stories">Stories</a>
+        <a class="nav-link nav-emergency" href="#emergency"><span class="dot"></span> Emergency</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-sm btn-primary" data-book-now>Book now</button>
+        <button class="btn btn-sm btn-ghost auth-only" data-open-auth="login">Login</button>
+        <button class="btn btn-sm btn-outline auth-only" data-open-auth="register">Register</button>
+        <button class="btn btn-sm btn-ghost user-only" id="navUser" hidden>
+          <span class="avatar avatar-xs" id="navUserInitials">T</span>
+          <span id="navUserName">My visits</span>
+        </button>
+        <button class="btn btn-sm btn-ghost user-only" id="navSignOut" hidden>Sign out</button>
+        <button class="btn btn-sm btn-dark" id="navDoctor">
+          <svg class="ico"><use href="#i-stethoscope"/></svg>
+          Doctor portal
+        </button>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav class="mobile-links" aria-label="Mobile navigation">
+      <a href="#home" data-close-menu>Home</a>
+      <a href="#about" data-close-menu>About the hospital</a>
+      <a href="#specialties" data-close-menu>Specialties</a>
+      <a href="#doctors" data-close-menu>Our doctors</a>
+      <a href="#facilities" data-close-menu>Facilities</a>
+      <a href="#packages" data-close-menu>Health packages</a>
+      <a href="#stories" data-close-menu>Patient stories</a>
+      <a href="#emergency" data-close-menu>Emergency &amp; ambulance</a>
+      <a href="#faq" data-close-menu>FAQs &amp; insurance</a>
+      <a href="#contact" data-close-menu>Contact</a>
+    </nav>
+    <div class="mobile-actions">
+      <button class="btn btn-primary btn-block" data-book-now>Book an appointment</button>
+      <div class="mobile-row">
+        <button class="btn btn-ghost auth-only" data-open-auth="login">Login</button>
+        <button class="btn btn-outline auth-only" data-open-auth="register">Register</button>
+        <button class="btn btn-ghost user-only" data-my-visits hidden>My visits</button>
+        <button class="btn btn-ghost user-only" id="mobileSignOut" hidden>Sign out</button>
+      </div>
+      <div class="mobile-row">
+        <button class="btn btn-dark" data-open-doctor>Doctor portal</button>
+        <a class="btn btn-emergency" href="tel:1800200300">
+          <svg class="ico"><use href="#i-phone"/></svg> Emergency
+        </a>
+      </div>
+    </div>
+    <p class="mobile-note">NABH accredited · 24/7 emergency · Cashless insurance</p>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <img src="assets/img/hero.jpg" alt="The bright, calm atrium of Manthan Pharma hospital" fetchpriority="high" />
+      </div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="pill pill-live" data-reveal>
+            <span class="dot"></span> 24/7 emergency · NABH accredited
+          </span>
+          <p class="hero-kicker" data-reveal>MANTHAN PHARMA · MULTI-SPECIALTY HOSPITAL</p>
+          <h1 data-reveal>Healthcare that<br />feels <em>human.</em></h1>
+          <p class="hero-sub" data-reveal>
+            From a 2 a.m. emergency to a long-overdue checkup — 16 senior consultants
+            across 18 specialties, one promise: you will always be treated like family.
+          </p>
+          <div class="hero-cta" data-reveal>
+            <button class="btn btn-primary btn-lg" data-book-now>
+              Book an appointment
+              <svg class="ico"><use href="#i-arrow"/></svg>
+            </button>
+            <a class="btn btn-glass btn-lg" href="#doctors">Find a doctor</a>
+            <a class="btn btn-glass btn-lg" href="#navigator"><svg class="ico"><use href="#i-sparkle"/></svg> Care navigator</a>
+            <a class="btn btn-emergency btn-lg" href="tel:1800200300">
+              <svg class="ico"><use href="#i-phone"/></svg> Emergency
+            </a>
+          </div>
+          <div class="hero-proof" data-reveal>
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="avatar">A</span><span class="avatar">M</span><span class="avatar">R</span><span class="avatar">+</span>
+            </div>
+            <div>
+              <div class="stars">
+                <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+                <span>4.9/5</span>
+              </div>
+              <p>Loved by 12,400+ patients across Bengaluru</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <div class="glass-card float-card card-next" data-reveal>
+            <span class="card-icon"><svg class="ico"><use href="#i-calendar"/></svg></span>
+            <div>
+              <p class="card-label">Next available</p>
+              <p class="card-strong">Today · 4:30 PM</p>
+              <p class="card-note">Dr. Aarav Mehta · Cardiology</p>
+            </div>
+            <button class="mini-book" data-book-doctor="aarav" aria-label="Book with Dr. Aarav Mehta">Book</button>
+          </div>
+          <div class="glass-card float-card card-rating" data-reveal>
+            <div class="rating-big">98<span>%</span></div>
+            <div>
+              <p class="card-strong">Would recommend us</p>
+              <p class="card-note">Based on 3,860 verified reviews</p>
+            </div>
+          </div>
+          <div class="glass-card float-card card-response" data-reveal>
+            <span class="pulse-dot"></span>
+            <div>
+              <p class="card-label">Emergency response</p>
+              <p class="card-strong">8 min average</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container hero-footer">
+        <span class="scroll-hint">Scroll to explore <i></i></span>
+        <div class="hero-tags">
+          <span>Cardiac sciences</span><span>Mother &amp; child</span><span>Orthopaedics</span><span>Preventive health</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <div class="trust-strip">
+      <div class="container trust-inner">
+        <span><svg class="ico"><use href="#i-shield"/></svg> NABH accredited hospital</span>
+        <span><svg class="ico"><use href="#i-shield"/></svg> ISO 9001:2015 certified</span>
+        <span><svg class="ico"><use href="#i-card"/></svg> Cashless insurance</span>
+        <span><svg class="ico"><use href="#i-clock"/></svg> Emergency open 24/7</span>
+        <span><svg class="ico"><use href="#i-scan"/></svg> Digital reports in 24h</span>
+      </div>
+    </div>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat" data-reveal>
+          <strong><span data-count="26">0</span><span class="plus">+</span></strong>
+          <p>Years of caring for Bengaluru</p>
+        </div>
+        <div class="stat" data-reveal>
+          <strong><span data-count="120">0</span><span class="plus">+</span></strong>
+          <p>Specialists across 18 departments</p>
+        </div>
+        <div class="stat" data-reveal>
+          <strong><span data-count="300">0</span></strong>
+          <p>Beds, including 42 critical-care beds</p>
+        </div>
+        <div class="stat" data-reveal>
+          <strong><span data-count="98">0</span><span class="plus">%</span></strong>
+          <p>Patients who recommend us</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual" data-reveal>
+          <figure class="about-img about-img-main">
+            <img src="assets/img/about-team.jpg" alt="A care team reviewing a patient's plan together" loading="lazy" />
+          </figure>
+          <figure class="about-img about-img-small">
+            <img src="assets/img/about-doctor.jpg" alt="A doctor speaking with a patient" loading="lazy" />
+          </figure>
+          <div class="about-badge glass-card">
+            <strong>26</strong>
+            <span>years of quiet, consistent care</span>
+          </div>
+          <div class="about-ring" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-copy">
+          <span class="eyebrow" data-reveal>Why MANTHAN PHARMA</span>
+          <h2 data-reveal>A hospital built around <em>one person:</em> you.</h2>
+          <p class="lead" data-reveal>
+            Great medicine is only half the story. The other half is how you feel
+            walking through our doors — informed, heard, and never like a number.
+          </p>
+          <p data-reveal>
+            We bring together senior consultants, evidence-led protocols and genuinely
+            warm care teams across 18 specialties. From diagnosis to discharge, one
+            coordinator stays with you and your family, so you always know the next step.
+          </p>
+          <ul class="about-list" data-reveal>
+            <li><span><svg class="ico"><use href="#i-check"/></svg></span> Same-day specialist appointments, in-clinic or video</li>
+            <li><span><svg class="ico"><use href="#i-check"/></svg></span> Transparent pricing — estimates before you begin</li>
+            <li><span><svg class="ico"><use href="#i-check"/></svg></span> Digital reports, prescriptions and reminders in one place</li>
+            <li><span><svg class="ico"><use href="#i-check"/></svg></span> 24/7 pharmacy and ambulance on campus</li>
+          </ul>
+          <div class="about-actions" data-reveal>
+            <button class="btn btn-primary" data-book-now>Book a visit</button>
+            <a class="btn btn-outline" href="#facilities">Explore facilities</a>
+            <a class="btn btn-ghost" href="#stories">Read patient stories</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARE NAVIGATOR ============ -->
+    <section class="section navigator" id="navigator">
+      <div class="container">
+        <div class="navigator-shell liquid-card" data-reveal>
+          <div class="navigator-copy">
+            <span class="eyebrow"><svg class="ico"><use href="#i-sparkle"/></svg> Care navigator · live</span>
+            <h2>Not sure where to start?<br /><em>Slide to find your care.</em></h2>
+            <p>Tell us who needs care and how soon. We'll point you to the right specialist, package and price — no phone tag.</p>
+
+            <div class="segmented" id="navFor" role="tablist" aria-label="Who needs care">
+              <span class="seg-pill" aria-hidden="true"></span>
+              <button class="seg-btn active" type="button" role="tab" aria-selected="true" data-nav-for="me">For me</button>
+              <button class="seg-btn" type="button" role="tab" aria-selected="false" data-nav-for="family">For family</button>
+              <button class="seg-btn" type="button" role="tab" aria-selected="false" data-nav-for="senior">For a senior</button>
+            </div>
+
+            <div class="range-head">
+              <span>How soon do you need care?</span>
+              <strong id="navUrgencyLabel">This week</strong>
+            </div>
+            <input class="glass-range" id="navUrgency" type="range" min="0" max="3" step="1" value="1"
+              aria-label="How soon do you need care" aria-valuetext="This week" />
+            <div class="range-scale"><span>Today</span><span>This week</span><span>This month</span><span>Just checking</span></div>
+
+            <div class="navigator-note">
+              <svg class="ico"><use href="#i-shield"/></svg>
+              <span>No data is stored. Recommendations are a guide, not a diagnosis.</span>
+            </div>
+          </div>
+
+          <aside class="navigator-result glass-panel" id="navigatorResult" aria-live="polite">
+            <span class="result-kicker" id="navResultKicker">Recommended for you</span>
+            <h3 id="navResultTitle">General Consultation</h3>
+            <p id="navResultText">A same-day physician consult is the fastest way to get answers, a prescription and a clear next step.</p>
+            <div class="result-facts">
+              <span><small>From</small><strong id="navResultPrice">₹899</strong></span>
+              <span><small>Seen in</small><strong id="navResultWait">Today</strong></span>
+              <span><small>Includes</small><strong id="navResultIncludes">Free follow-up</strong></span>
+            </div>
+            <div class="result-actions">
+              <button class="btn btn-primary" id="navResultBook" data-care="general">Book this care <svg class="ico"><use href="#i-arrow"/></svg></button>
+              <a class="btn btn-glass" href="tel:1800200300"><svg class="ico"><use href="#i-phone"/></svg> Ask a nurse</a>
+            </div>
+            <p class="result-alt">Prefer to browse? <a href="#specialties">See all 18 specialties</a></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPECIALTIES ============ -->
+    <section class="section specialties" id="specialties">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Centres of excellence</span>
+            <h2 data-reveal>Expertise for every chapter <em>of life.</em></h2>
+          </div>
+          <p data-reveal>
+            Eighteen specialties, one connected care record. Meet the teams who will
+            know your story from the very first visit.
+          </p>
+        </div>
+
+        <div class="specialty-grid">
+          <button class="specialty-card" data-care="cardiac" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-heart"/></svg></span>
+            <span class="sp-index">01</span>
+            <h3>Cardiac Sciences</h3>
+            <p>Preventive heart checks, interventional cardiology and a 24/7 cath lab.</p>
+            <span class="sp-link">Book a cardiologist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="general" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-brain"/></svg></span>
+            <span class="sp-index">02</span>
+            <h3>Neurosciences</h3>
+            <p>Stroke-ready emergency care, epilepsy clinics and advanced neuro imaging.</p>
+            <span class="sp-link">Book a neurologist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="general" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-bone"/></svg></span>
+            <span class="sp-index">03</span>
+            <h3>Orthopaedics</h3>
+            <p>Joint replacement, sports injuries and robotic-assisted knee surgery.</p>
+            <span class="sp-link">Book an orthopaedic <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="mother" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-baby"/></svg></span>
+            <span class="sp-index">04</span>
+            <h3>Mother &amp; Child</h3>
+            <p>Birthing suites, high-risk pregnancy care and a child-friendly paediatric ward.</p>
+            <span class="sp-link">Book a specialist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="dental" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-tooth"/></svg></span>
+            <span class="sp-index">05</span>
+            <h3>Dental Care</h3>
+            <p>Painless dentistry, same-day crowns and gentle care for anxious patients.</p>
+            <span class="sp-link">Book a dentist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="eye" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-eye"/></svg></span>
+            <span class="sp-index">06</span>
+            <h3>Eye &amp; Vision</h3>
+            <p>Comprehensive eye exams, cataract surgery and paediatric vision care.</p>
+            <span class="sp-link">Book an eye specialist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="imaging" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-scan"/></svg></span>
+            <span class="sp-index">07</span>
+            <h3>Diagnostics &amp; Imaging</h3>
+            <p>3T MRI, low-dose CT, digital X-ray and same-day pathology reports.</p>
+            <span class="sp-link">Book a scan <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="executive" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-stethoscope"/></svg></span>
+            <span class="sp-index">08</span>
+            <h3>Executive Health</h3>
+            <p>One-day, physician-led assessments designed around your busy calendar.</p>
+            <span class="sp-link">Book an assessment <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="ent" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-ear"/></svg></span>
+            <span class="sp-index">09</span>
+            <h3>ENT &amp; Sleep</h3>
+            <p>Hearing, sinus, voice and sleep apnoea care with on-site endoscopy.</p>
+            <span class="sp-link">Book an ENT specialist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="gastro" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-lungs"/></svg></span>
+            <span class="sp-index">10</span>
+            <h3>Gastro &amp; Liver</h3>
+            <p>Digestive health, acidity, IBS and liver care from a gastroenterologist.</p>
+            <span class="sp-link">Book a gastro consult <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="mental" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-brain"/></svg></span>
+            <span class="sp-index">11</span>
+            <h3>Mental Health</h3>
+            <p>Private psychiatry and therapy for anxiety, sleep, burnout and mood.</p>
+            <span class="sp-link">Book a confidential session <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="physio" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-bone"/></svg></span>
+            <span class="sp-index">12</span>
+            <h3>Physio &amp; Rehab</h3>
+            <p>Back, neck, sports injuries and post-surgery rehabilitation plans.</p>
+            <span class="sp-link">Book a physiotherapist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="diabetes" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-pill"/></svg></span>
+            <span class="sp-index">13</span>
+            <h3>Diabetes &amp; Hormones</h3>
+            <p>HbA1c, thyroid and hormonal health with a physician-led plan.</p>
+            <span class="sp-link">Book an endocrinologist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="specialty-card" data-care="nutrition" data-reveal>
+            <span class="sp-icon"><svg class="ico"><use href="#i-heart"/></svg></span>
+            <span class="sp-index">14</span>
+            <h3>Nutrition &amp; Lifestyle</h3>
+            <p>Food-first plans for weight, energy, PCOS and heart health.</p>
+            <span class="sp-link">Book a nutritionist <svg class="ico"><use href="#i-arrow"/></svg></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOCTORS ============ -->
+    <section class="section doctors" id="doctors">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>People you can trust</span>
+            <h2 data-reveal>Meet the minds behind <em>the care.</em></h2>
+          </div>
+          <p data-reveal>
+            Sixteen senior consultants across 18 departments who listen first, explain clearly
+            and stay involved. Filter by department, then slide through the team.
+          </p>
+        </div>
+        <div class="rail-toolbar" data-reveal>
+          <div class="chip-row rail-filters" id="doctorFiltersHome" aria-label="Filter doctors by department"></div>
+          <div class="rail-nav">
+            <button class="rail-btn" type="button" data-rail-prev="doctorGrid" aria-label="Previous doctors"><svg class="ico"><use href="#i-arrow-left"/></svg></button>
+            <button class="rail-btn" type="button" data-rail-next="doctorGrid" aria-label="Next doctors"><svg class="ico"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+        <div class="doctor-rail" id="doctorGrid" tabindex="0" aria-label="Our consultants"></div>
+        <div class="rail-progress" aria-hidden="true"><i id="doctorRailProgress"></i></div>
+        <div class="doctors-foot" data-reveal>
+          <p>Looking for someone specific? Our care desk will find the right specialist for you.</p>
+          <div class="doctors-foot-actions">
+            <a class="btn btn-outline" href="tel:1800200300"><svg class="ico"><use href="#i-phone"/></svg> Talk to the care desk</a>
+            <button class="btn btn-glass" data-book-now>See all availability <svg class="ico"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FACILITIES ============ -->
+    <section class="section facilities" id="facilities">
+      <div class="container facilities-grid">
+        <div class="facilities-copy">
+          <span class="eyebrow" data-reveal>Inside the hospital</span>
+          <h2 data-reveal>Quietly advanced.<br /><em>Comfortably human.</em></h2>
+          <p class="lead" data-reveal>
+            Technology should disappear into the background. Ours does — so you can
+            focus on getting better.
+          </p>
+          <div class="facility-list">
+            <div class="facility" data-reveal>
+              <span class="facility-icon"><svg class="ico"><use href="#i-activity"/></svg></span>
+              <div><h3>Level-3 ICU &amp; critical care</h3><p>42 monitored beds, 1:1 nursing and round-the-clock intensivists.</p></div>
+            </div>
+            <div class="facility" data-reveal>
+              <span class="facility-icon"><svg class="ico"><use href="#i-scan"/></svg></span>
+              <div><h3>Advanced imaging suite</h3><p>3T MRI, 128-slice CT and digital mammography under one roof.</p></div>
+            </div>
+            <div class="facility" data-reveal>
+              <span class="facility-icon"><svg class="ico"><use href="#i-pill"/></svg></span>
+              <div><h3>24/7 in-house pharmacy</h3><p>Every prescription filled before you leave the building.</p></div>
+            </div>
+            <div class="facility" data-reveal>
+              <span class="facility-icon"><svg class="ico"><use href="#i-phone"/></svg></span>
+              <div><h3>Rapid-response ambulance</h3><p>GPS-tracked fleet with a paramedic on every call. 8-minute average.</p></div>
+            </div>
+            <div class="facility" data-reveal>
+              <span class="facility-icon"><svg class="ico"><use href="#i-card"/></svg></span>
+              <div><h3>Insurance, made simple</h3><p>Cashless approvals with 30+ insurers, handled by our desk.</p></div>
+            </div>
+            <div class="facility" data-reveal>
+              <span class="facility-icon"><svg class="ico"><use href="#i-user"/></svg></span>
+              <div><h3>One dedicated coordinator</h3><p>A single point of contact from admission to follow-up.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="facilities-visual" data-reveal>
+          <figure class="facility-img">
+            <img src="assets/img/facility-room.jpg" alt="A calm, modern patient room at Manthan Pharma" loading="lazy" />
+          </figure>
+          <div class="facility-float glass-card">
+            <div class="facility-stat">
+              <span class="pulse-dot"></span>
+              <div><strong>24/7</strong><small>Emergency &amp; ICU</small></div>
+            </div>
+            <div class="facility-divider"></div>
+            <div class="facility-stat">
+              <strong>8 min</strong><small>Ambulance response</small>
+            </div>
+          </div>
+          <div class="facility-tag glass-card">
+            <svg class="ico"><use href="#i-shield"/></svg>
+            <span>NABH accredited<br /><small>since 2014</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMERGENCY ============ -->
+    <section class="section emergency-section" id="emergency">
+      <div class="container">
+        <div class="emergency-shell liquid-card" data-reveal>
+          <div class="emergency-media">
+            <img src="assets/img/emergency.jpg" alt="Manthan Pharma emergency department entrance" loading="lazy" />
+            <div class="er-live glass-card">
+              <span class="pulse-dot"></span>
+              <div><strong>ER is open</strong><small>Current wait · 4 minutes</small></div>
+            </div>
+          </div>
+          <div class="emergency-copy">
+            <span class="eyebrow">Emergency &amp; ambulance</span>
+            <h2>When every minute<br /><em>matters.</em></h2>
+            <p>Our emergency department never closes: 24/7 consultants, a 42-bed critical care unit, stroke-ready protocols and a GPS-tracked ambulance fleet with an 8-minute average response.</p>
+            <div class="er-facts">
+              <div><strong>24/7</strong><span>Consultants on site</span></div>
+              <div><strong>8 min</strong><span>Ambulance average</span></div>
+              <div><strong>42</strong><span>Critical care beds</span></div>
+            </div>
+            <div class="er-actions">
+              <a class="btn btn-emergency btn-lg" href="tel:1800200300"><svg class="ico"><use href="#i-phone"/></svg> Call emergency</a>
+              <a class="btn btn-glass btn-lg" href="#contact"><svg class="ico"><use href="#i-pin"/></svg> Get directions</a>
+              <button class="btn btn-outline btn-lg" data-care="general">Book a same-day visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PACKAGES ============ -->
+    <section class="section packages" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Preventive health</span>
+            <h2 data-reveal>Checkups that actually <em>check things.</em></h2>
+          </div>
+          <p data-reveal>
+            Thoughtfully bundled tests, reviewed by a physician and explained in plain
+            language. No upsells, no jargon, no waiting weeks for answers.
+          </p>
+        </div>
+
+        <div class="rail-toolbar" data-reveal>
+          <div class="rail-hint"><svg class="ico"><use href="#i-sparkle"/></svg> Six physician-designed packages · swipe or use arrows</div>
+          <div class="rail-nav">
+            <button class="rail-btn" type="button" data-rail-prev="packageRail" aria-label="Previous packages"><svg class="ico"><use href="#i-arrow-left"/></svg></button>
+            <button class="rail-btn" type="button" data-rail-next="packageRail" aria-label="Next packages"><svg class="ico"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+        <div class="package-rail" id="packageRail" tabindex="0" aria-label="Health packages">
+          <article class="package-card" data-reveal>
+            <div class="package-head">
+              <span class="package-kicker">Essential</span>
+              <h3>Everyday Health</h3>
+              <p>For anyone who hasn't had a proper checkup in a while.</p>
+            </div>
+            <div class="package-price"><strong>₹2,499</strong><span><s>₹3,050</s> · save 18%</span></div>
+            <ul class="package-list">
+              <li><svg class="ico"><use href="#i-check"/></svg> 68 lab parameters</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Physician consultation</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> ECG &amp; chest X-ray</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Reports in 24 hours</li>
+            </ul>
+            <button class="btn btn-outline btn-block" data-care="fullbody">Choose Everyday Health</button>
+          </article>
+
+          <article class="package-card popular" data-reveal>
+            <span class="popular-tag">Most booked</span>
+            <div class="package-head">
+              <span class="package-kicker">Advanced</span>
+              <h3>Heart &amp; Vitality</h3>
+              <p>For family histories, high stress and hearts that deserve attention.</p>
+            </div>
+            <div class="package-price"><strong>₹4,999</strong><span><s>₹6,200</s> · save 19%</span></div>
+            <ul class="package-list">
+              <li><svg class="ico"><use href="#i-check"/></svg> 92 lab parameters</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Cardiologist consultation</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> 2D echo &amp; treadmill test</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Personal care coordinator</li>
+            </ul>
+            <button class="btn btn-primary btn-block" data-care="cardiac">Choose Heart &amp; Vitality</button>
+          </article>
+
+          <article class="package-card" data-reveal>
+            <div class="package-head">
+              <span class="package-kicker">Executive</span>
+              <h3>The Full Picture</h3>
+              <p>One unhurried day, every major system reviewed by a physician.</p>
+            </div>
+            <div class="package-price"><strong>₹7,499</strong><span><s>₹9,400</s> · save 20%</span></div>
+            <ul class="package-list">
+              <li><svg class="ico"><use href="#i-check"/></svg> 120 lab parameters</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Full imaging &amp; cardiac panel</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Same-day physician review</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> 30-day follow-up included</li>
+            </ul>
+            <button class="btn btn-outline btn-block" data-care="executive">Choose The Full Picture</button>
+          </article>
+
+          <article class="package-card" data-reveal>
+            <div class="package-head">
+              <span class="package-kicker">Women</span>
+              <h3>Women's Wellness</h3>
+              <p>Hormones, bone health, iron and a gynae review — designed for every decade.</p>
+            </div>
+            <div class="package-price"><strong>₹5,499</strong><span><s>₹6,800</s> · save 19%</span></div>
+            <ul class="package-list">
+              <li><svg class="ico"><use href="#i-check"/></svg> 86 lab parameters</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Gynaecologist review</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Thyroid, iron &amp; vitamin D</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Bone density screening</li>
+            </ul>
+            <button class="btn btn-outline btn-block" data-care="mother">Choose Women's Wellness</button>
+          </article>
+
+          <article class="package-card" data-reveal>
+            <div class="package-head">
+              <span class="package-kicker">Senior</span>
+              <h3>Senior Care 60+</h3>
+              <p>A gentler, slower-paced assessment built around mobility and independence.</p>
+            </div>
+            <div class="package-price"><strong>₹6,299</strong><span><s>₹7,900</s> · save 20%</span></div>
+            <ul class="package-list">
+              <li><svg class="ico"><use href="#i-check"/></svg> 102 lab parameters</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Physician + physio review</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> ECG, echo &amp; bone density</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Falls-risk assessment</li>
+            </ul>
+            <button class="btn btn-outline btn-block" data-care="physio">Choose Senior Care</button>
+          </article>
+
+          <article class="package-card" data-reveal>
+            <div class="package-head">
+              <span class="package-kicker">Metabolic</span>
+              <h3>Diabetes Care</h3>
+              <p>Sugar, thyroid and heart risk reviewed together by an endocrinologist.</p>
+            </div>
+            <div class="package-price"><strong>₹3,299</strong><span><s>₹4,100</s> · save 20%</span></div>
+            <ul class="package-list">
+              <li><svg class="ico"><use href="#i-check"/></svg> HbA1c + thyroid panel</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Endocrinologist consult</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Kidney &amp; lipid profile</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> 30-day diet follow-up</li>
+            </ul>
+            <button class="btn btn-outline btn-block" data-care="diabetes">Choose Diabetes Care</button>
+          </article>
+        </div>
+        <div class="rail-progress" aria-hidden="true"><i id="packageRailProgress"></i></div>
+        <p class="package-note" data-reveal>
+          <svg class="ico"><use href="#i-shield"/></svg>
+          All packages include a physician review, digital reports and a printed summary. Fasting guidelines are sent after booking.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ STORIES ============ -->
+    <section class="section stories" id="stories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Patient stories</span>
+            <h2 data-reveal>Care, remembered <em>in their words.</em></h2>
+          </div>
+          <p data-reveal>
+            Real experiences from people who walked in worried and walked out with answers.
+          </p>
+        </div>
+        <div class="rail-toolbar" data-reveal>
+          <div class="rail-hint"><svg class="ico"><use href="#i-star"/></svg> 4.9/5 from 3,860 verified patient reviews</div>
+          <div class="rail-nav">
+            <button class="rail-btn" type="button" data-rail-prev="storyRail" aria-label="Previous stories"><svg class="ico"><use href="#i-arrow-left"/></svg></button>
+            <button class="rail-btn" type="button" data-rail-next="storyRail" aria-label="Next stories"><svg class="ico"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+        <div class="story-rail" id="storyRail" tabindex="0" aria-label="Patient stories">
+          <article class="story-card" data-reveal>
+            <div class="story-stars">
+              <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+            </div>
+            <blockquote>
+              “I came in at midnight with chest pain. The team had an ECG running before
+              I finished explaining. Dr. Mehta later sat with my wife and drew out exactly
+              what had happened. I have never felt so looked after in a hospital.”
+            </blockquote>
+            <footer>
+              <span class="avatar avatar-lg">RK</span>
+              <div><strong>Rakesh K.</strong><small>Cardiac care · 2025</small></div>
+              <svg class="ico story-quote"><use href="#i-quote"/></svg>
+            </footer>
+          </article>
+          <article class="story-card" data-reveal>
+            <div class="story-stars">
+              <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+            </div>
+            <blockquote>
+              “The checkup was for my father, but they looked after all of us. Someone
+              called the next day just to ask how he had slept. The reports arrived on my
+              phone before we reached home. That kind of care is rare.”
+            </blockquote>
+            <footer>
+              <span class="avatar avatar-lg">SN</span>
+              <div><strong>Sneha N.</strong><small>Executive health · 2026</small></div>
+              <svg class="ico story-quote"><use href="#i-quote"/></svg>
+            </footer>
+          </article>
+          <article class="story-card" data-reveal>
+            <div class="story-stars">
+              <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+            </div>
+            <blockquote>
+              “Our daughter was nervous about her first dental visit. Dr. Isha turned it
+              into a game, showed her every instrument, and had her laughing by the end.
+              She now asks when we can go back. Honestly, so do I.”
+            </blockquote>
+            <footer>
+              <span class="avatar avatar-lg">AM</span>
+              <div><strong>Arjun M.</strong><small>Paediatric dentistry · 2026</small></div>
+              <svg class="ico story-quote"><use href="#i-quote"/></svg>
+            </footer>
+          </article>
+          <article class="story-card" data-reveal>
+            <div class="story-stars">
+              <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+            </div>
+            <blockquote>
+              “I had put off my mental health for years. Dr. Siddiqui made the first
+              session feel like talking to someone who already understood. Eight weeks
+              later, I sleep properly and my family has noticed the difference.”
+            </blockquote>
+            <footer>
+              <span class="avatar avatar-lg">VP</span>
+              <div><strong>Vikram P.</strong><small>Mental health · 2026</small></div>
+              <svg class="ico story-quote"><use href="#i-quote"/></svg>
+            </footer>
+          </article>
+          <article class="story-card" data-reveal>
+            <div class="story-stars">
+              <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+            </div>
+            <blockquote>
+              “My knee replacement was rescheduled twice at another hospital. Here, the
+              surgeon drew the plan on paper, the physio met me before surgery, and I
+              walked out on day three. The follow-up calls still continue.”
+            </blockquote>
+            <footer>
+              <span class="avatar avatar-lg">GS</span>
+              <div><strong>Gurpreet S.</strong><small>Orthopaedics · 2026</small></div>
+              <svg class="ico story-quote"><use href="#i-quote"/></svg>
+            </footer>
+          </article>
+          <article class="story-card" data-reveal>
+            <div class="story-stars">
+              <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+            </div>
+            <blockquote>
+              “The ambulance reached us in seven minutes. They had already spoken to the
+              cardiologist before we arrived, and the cath lab was ready. There was no
+              paperwork panic, no running around. Just calm, fast hands.”
+            </blockquote>
+            <footer>
+              <span class="avatar avatar-lg">LK</span>
+              <div><strong>Lata K.</strong><small>Emergency cardiac care · 2025</small></div>
+              <svg class="ico story-quote"><use href="#i-quote"/></svg>
+            </footer>
+          </article>
+        </div>
+        <div class="rail-progress" aria-hidden="true"><i id="storyRailProgress"></i></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ + JOURNAL ============ -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-copy">
+          <span class="eyebrow" data-reveal>Good to know</span>
+          <h2 data-reveal>Questions, answered<br /><em>before you ask.</em></h2>
+          <p data-reveal>Still unsure about something? Our care desk answers calls 24/7, and we never charge for a question.</p>
+          <div class="faq-actions" data-reveal>
+            <a class="btn btn-primary" href="tel:1800200300"><svg class="ico"><use href="#i-phone"/></svg> Talk to a human</a>
+            <button class="btn btn-glass" data-book-now>Book a visit</button>
+          </div>
+          <div class="insurance-mini glass-panel" data-reveal>
+            <svg class="ico"><use href="#i-shield"/></svg>
+            <div><strong>Cashless with 30+ insurers</strong><span>We handle pre-authorisation for you — usually within 2 hours.</span></div>
+          </div>
+        </div>
+
+        <div class="faq-list" id="faqList" data-reveal>
+          <article class="faq-item open">
+            <button class="faq-q" type="button" data-faq aria-expanded="true">
+              <span>How quickly can I see a specialist?</span><span class="faq-plus"><svg class="ico"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a"><p>Most departments have same-day or next-day slots. Cardiac, general medicine, paediatrics and diagnostics usually have same-day availability. You can see live slots in the booking flow before paying anything.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-q" type="button" data-faq aria-expanded="false">
+              <span>Do you accept insurance and cashless claims?</span><span class="faq-plus"><svg class="ico"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a"><p>Yes. We work with 30+ insurers including Star Health, HDFC Ergo, ICICI Lombard, Niva Bupa and Bajaj Allianz. Bring your policy card and a photo ID; our insurance desk handles pre-authorisation and keeps you updated.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-q" type="button" data-faq aria-expanded="false">
+              <span>Can I reschedule or cancel my appointment?</span><span class="faq-plus"><svg class="ico"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a"><p>Yes — rescheduling is free up to 4 hours before your slot. Open “My visits”, choose the appointment and pick a new time. Cancellations within 4 hours may attract a small platform fee.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-q" type="button" data-faq aria-expanded="false">
+              <span>Are video consultations available?</span><span class="faq-plus"><svg class="ico"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a"><p>Yes. General medicine, dermatology, mental health, nutrition and several follow-up visits are available by secure video. Prescriptions and digital reports appear in your account immediately after the call.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-q" type="button" data-faq aria-expanded="false">
+              <span>What should I bring for a health checkup?</span><span class="faq-plus"><svg class="ico"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a"><p>A photo ID, your insurance card if applicable, and any current medicines or previous reports. Fasting instructions are sent by SMS and email after booking — usually 10–12 hours for most packages.</p></div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-q" type="button" data-faq aria-expanded="false">
+              <span>Is there parking and wheelchair access?</span><span class="faq-plus"><svg class="ico"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-a"><p>Yes. Basement parking for 180 cars, valet assistance at the main entrance, step-free access throughout, wheelchairs at every lobby and accessible restrooms on every floor.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journal" id="journal">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Health journal</span>
+            <h2 data-reveal>Small reads. <em>Real difference.</em></h2>
+          </div>
+          <p data-reveal>Practical, doctor-reviewed notes on the things patients ask us most. No scare tactics, no miracle cures.</p>
+        </div>
+        <div class="journal-grid">
+          <article class="journal-card" data-reveal>
+            <div class="journal-media"><img src="assets/img/lab.jpg" alt="Pathology lab at Manthan Pharma" loading="lazy" /><span class="journal-tag">Preventive health</span></div>
+            <div class="journal-body">
+              <span class="journal-meta">6 min read · Reviewed by Dr. Vikram Nair</span>
+              <h3>Which health checkup do you actually need?</h3>
+              <p>Age, family history and lifestyle change the answer more than price does. Here's a simple way to choose.</p>
+              <button class="link-btn" type="button" data-journal="checkup">Read the guide <svg class="ico"><use href="#i-arrow"/></svg></button>
+            </div>
+          </article>
+          <article class="journal-card" data-reveal>
+            <div class="journal-media"><img src="assets/img/facility-room.jpg" alt="A calm patient room" loading="lazy" /><span class="journal-tag">Heart health</span></div>
+            <div class="journal-body">
+              <span class="journal-meta">4 min read · Reviewed by Dr. Aarav Mehta</span>
+              <h3>The heart symptoms people wait too long to check</h3>
+              <p>Not every heart problem looks like a movie heart attack. Five quiet signals worth acting on.</p>
+              <button class="link-btn" type="button" data-journal="heart">Read the guide <svg class="ico"><use href="#i-arrow"/></svg></button>
+            </div>
+          </article>
+          <article class="journal-card" data-reveal>
+            <div class="journal-media"><img src="assets/img/about-team.jpg" alt="Care team at Manthan Pharma" loading="lazy" /><span class="journal-tag">Family care</span></div>
+            <div class="journal-body">
+              <span class="journal-meta">5 min read · Reviewed by Dr. Ananya Rao</span>
+              <h3>A calmer first hospital visit for your child</h3>
+              <p>What to say, what to bring and what actually helps a nervous child feel safe.</p>
+              <button class="link-btn" type="button" data-journal="child">Read the guide <svg class="ico"><use href="#i-arrow"/></svg></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSURANCE MARQUEE ============ -->
+    <section class="insurer-band" id="insurance">
+      <div class="container insurer-inner">
+        <div class="insurer-copy">
+          <span class="eyebrow">Cashless &amp; simple</span>
+          <strong>30+ insurance partners. One desk that handles it.</strong>
+        </div>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Star Health</span><span>HDFC Ergo</span><span>ICICI Lombard</span><span>Niva Bupa</span><span>Bajaj Allianz</span><span>New India Assurance</span><span>Care Health</span><span>Tata AIG</span><span>SBI General</span><span>Aditya Birla Health</span>
+            <span>Star Health</span><span>HDFC Ergo</span><span>ICICI Lombard</span><span>Niva Bupa</span><span>Bajaj Allianz</span><span>New India Assurance</span><span>Care Health</span><span>Tata AIG</span><span>SBI General</span><span>Aditya Birla Health</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <div class="cta-media"><img src="assets/img/cta.jpg" alt="" loading="lazy" /></div>
+      <div class="container cta-inner" data-reveal>
+        <div>
+          <span class="eyebrow">No waiting rooms. No guesswork.</span>
+          <h2>Your health can't wait.<br /><em>Neither should you.</em></h2>
+          <p>Choose a checkup, a specialist and a time that suits you. It takes about 60 seconds.</p>
+        </div>
+        <div class="cta-actions">
+          <button class="btn btn-primary btn-lg" data-book-now>Book an appointment <svg class="ico"><use href="#i-arrow"/></svg></button>
+          <a class="btn btn-glass btn-lg" href="tel:1800200300"><svg class="ico"><use href="#i-phone"/></svg> 1800 200 300</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / FOOTER ============ -->
+    <footer class="footer" id="contact">
+      <div class="container footer-news liquid-card">
+        <div>
+          <span class="eyebrow">The Manthan note</span>
+          <strong>Health notes worth opening.</strong>
+          <span class="footer-news-sub">One short, doctor-reviewed email a month. No promotions, no noise.</span>
+        </div>
+        <form class="news-form" id="newsletterForm" novalidate>
+          <label class="sr-only" for="newsEmail">Email address</label>
+          <input type="email" id="newsEmail" placeholder="you@example.com" autocomplete="email" />
+          <button class="btn btn-primary" type="submit">Subscribe <svg class="ico"><use href="#i-arrow"/></svg></button>
+        </form>
+      </div>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 5v22M5 16h22" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/></svg>
+            </span>
+            <span class="brand-text"><span class="brand-name">MANTHAN <em>PHARMA</em></span><span class="brand-sub">Hospital · Pharmacy · Diagnostics</span></span>
+          </a>
+          <p>Care that feels human. A multi-specialty hospital in the heart of Bengaluru, open every hour of every day.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="X">X</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Hospital</h3>
+          <a href="#about">About us</a>
+          <a href="#specialties">Specialties</a>
+          <a href="#doctors">Our doctors</a>
+          <a href="#facilities">Facilities</a>
+          <a href="#stories">Patient stories</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Care &amp; services</h3>
+          <button data-book-now>Book an appointment</button>
+          <button data-care="fullbody">Health checkups</button>
+          <button data-care="imaging">Diagnostics &amp; imaging</button>
+          <button data-open-doctor>Doctor portal</button>
+          <a href="tel:1800200300">Emergency care</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Patients</h3>
+          <a href="#faq">FAQs &amp; insurance</a>
+          <a href="#journal">Health journal</a>
+          <a href="#emergency">Emergency &amp; ambulance</a>
+          <a href="#navigator">Care navigator</a>
+          <button data-journal="visiting">Visiting hours</button>
+        </div>
+
+        <div class="footer-col footer-visit">
+          <h3>Visit us</h3>
+          <p><svg class="ico"><use href="#i-pin"/></svg> 12 Wellness Avenue,<br />Indiranagar, Bengaluru 560038</p>
+          <p><svg class="ico"><use href="#i-phone"/></svg> <a href="tel:1800200300">1800 200 300</a> · 24/7</p>
+          <p><svg class="ico"><use href="#i-mail"/></svg> <a href="mailto:care@manthanpharma.health">care@manthanpharma.health</a></p>
+          <p><svg class="ico"><use href="#i-clock"/></svg> OPD 8:00 AM – 9:00 PM<br /><span>Emergency &amp; pharmacy always open</span></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year">2026</span> MANTHAN PHARMA. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy</a><a href="#">Patient rights</a><a href="#">Terms</a><a href="#">Sitemap</a>
+        </div>
+        <p class="footer-care">Made with care in Bengaluru <span class="dot"></span></p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="quick-dock" aria-label="Quick actions">
+    <a class="dock-btn dock-emergency" href="tel:1800200300" aria-label="Call emergency" data-tip="Emergency">
+      <svg class="ico"><use href="#i-phone"/></svg><span>Emergency</span>
+    </a>
+    <a class="dock-btn" href="https://wa.me/911800200300" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-tip="WhatsApp">
+      <svg class="ico"><use href="#i-wa"/></svg>
+    </a>
+    <button class="dock-btn dock-book" type="button" data-book-now aria-label="Book appointment" data-tip="Book">
+      <svg class="ico"><use href="#i-calendar"/></svg>
+    </button>
+    <button class="dock-btn" type="button" data-back-top aria-label="Back to top" data-tip="Top">
+      <svg class="ico"><use href="#i-up"/></svg>
+    </button>
+  </div>
+
+  <!-- ============ AUTH OVERLAY ============ -->
+  <div class="overlay auth-overlay" id="authOverlay" aria-hidden="true">
+    <div class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <aside class="auth-visual">
+        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1000&q=80" alt="Manthan Pharma care team" />
+        <div class="auth-visual-shade"></div>
+        <div class="auth-visual-copy">
+          <span class="pill pill-live"><span class="dot"></span> Care, connected</span>
+          <h2>One record.<br />Every visit.<br /><em>All yours.</em></h2>
+          <p>Appointments, reports, prescriptions and reminders — together in one calm place.</p>
+          <ul>
+            <li><svg class="ico"><use href="#i-check"/></svg> Book in under 60 seconds</li>
+            <li><svg class="ico"><use href="#i-check"/></svg> Reports delivered digitally</li>
+            <li><svg class="ico"><use href="#i-check"/></svg> Free follow-up reminders</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="auth-panel">
+        <button class="icon-btn overlay-close" data-close-auth aria-label="Close sign in">
+          <svg class="ico"><use href="#i-close"/></svg>
+        </button>
+
+        <div class="auth-tabs" role="tablist" aria-label="Sign in or create account">
+          <button class="auth-tab active" id="tabLogin" role="tab" aria-selected="true" data-auth-tab="login">Sign in</button>
+          <button class="auth-tab" id="tabRegister" role="tab" aria-selected="false" data-auth-tab="register">Create account</button>
+        </div>
+
+        <div class="auth-scroll">
+          <div class="auth-intro">
+            <p class="eyebrow" id="authEyebrow">Welcome back</p>
+            <h3 id="authTitle">Good to see you again.</h3>
+            <p id="authSubtitle">Sign in to book, reschedule and view your reports.</p>
+          </div>
+
+          <!-- LOGIN -->
+          <form class="auth-form" id="loginForm" novalidate>
+            <label class="field" data-field="loginEmail">
+              <span class="field-label">Email address</span>
+              <span class="input-wrap">
+                <svg class="ico"><use href="#i-mail"/></svg>
+                <input type="email" id="loginEmail" autocomplete="email" placeholder="you@example.com" />
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label class="field" data-field="loginPassword">
+              <span class="field-label">Password</span>
+              <span class="input-wrap">
+                <svg class="ico"><use href="#i-lock"/></svg>
+                <input type="password" id="loginPassword" autocomplete="current-password" placeholder="Your password" />
+                <button type="button" class="reveal" data-reveal-for="loginPassword">Show</button>
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <div class="form-row">
+              <label class="check-line"><input type="checkbox" id="rememberMe" checked /> <span>Keep me signed in</span></label>
+              <button type="button" class="link-btn" data-demo-login>Use demo account</button>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Sign in securely</button>
+            <div class="form-msg" id="loginMsg" aria-live="polite"></div>
+            <p class="fineprint">Demo account: <strong>tanishq@manthan.health</strong> / <strong>manthan123</strong></p>
+          </form>
+
+          <!-- REGISTER -->
+          <form class="auth-form" id="registerForm" novalidate hidden>
+            <label class="field" data-field="regName">
+              <span class="field-label">Full name</span>
+              <span class="input-wrap">
+                <svg class="ico"><use href="#i-user"/></svg>
+                <input type="text" id="regName" autocomplete="name" placeholder="Tanishq Khangerwal" />
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label class="field" data-field="regEmail">
+              <span class="field-label">Email address</span>
+              <span class="input-wrap">
+                <svg class="ico"><use href="#i-mail"/></svg>
+                <input type="email" id="regEmail" autocomplete="email" placeholder="you@example.com" />
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label class="field" data-field="regMobile">
+              <span class="field-label">Mobile number</span>
+              <span class="input-wrap">
+                <span class="prefix">+91</span>
+                <input type="tel" id="regMobile" autocomplete="tel" inputmode="numeric" maxlength="10" placeholder="98765 43210" />
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label class="field" data-field="regPassword">
+              <span class="field-label">Password</span>
+              <span class="input-wrap">
+                <svg class="ico"><use href="#i-lock"/></svg>
+                <input type="password" id="regPassword" autocomplete="new-password" placeholder="At least 8 characters" />
+                <button type="button" class="reveal" data-reveal-for="regPassword">Show</button>
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label class="field" data-field="regConfirm">
+              <span class="field-label">Confirm password</span>
+              <span class="input-wrap">
+                <svg class="ico"><use href="#i-lock"/></svg>
+                <input type="password" id="regConfirm" autocomplete="new-password" placeholder="Repeat your password" />
+                <button type="button" class="reveal" data-reveal-for="regConfirm">Show</button>
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label class="check-line terms">
+              <input type="checkbox" id="regTerms" />
+              <span>I agree to the <a href="#">terms of care</a> and <a href="#">privacy policy</a>.</span>
+            </label>
+            <span class="err terms-err" id="termsErr" aria-live="polite"></span>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Create my account</button>
+            <div class="form-msg" id="registerMsg" aria-live="polite"></div>
+          </form>
+
+          <div class="auth-switch" id="authSwitch">
+            <span>New to Manthan Pharma?</span>
+            <button type="button" class="link-btn" data-auth-tab="register">Create an account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DOCTOR OVERLAY ============ -->
+  <div class="overlay doctor-overlay" id="doctorOverlay" aria-hidden="true">
+    <div class="doctor-card" role="dialog" aria-modal="true" aria-labelledby="doctorTitle">
+      <button class="icon-btn overlay-close" data-close-doctor aria-label="Close doctor portal">
+        <svg class="ico"><use href="#i-close"/></svg>
+      </button>
+
+      <div class="doctor-view" id="doctorLoginView">
+        <div class="doctor-brand">
+          <span class="brand-mark small" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M16 5v22M5 16h22" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/></svg>
+          </span>
+          <span>MANTHAN <em>PHARMA</em></span>
+        </div>
+        <p class="eyebrow">Clinical portal</p>
+        <h2 id="doctorTitle">Welcome back, doctor.</h2>
+        <p class="doctor-sub">Sign in with your consultant credentials to view today's schedule and patient bookings.</p>
+
+        <form id="doctorForm" novalidate>
+          <label class="field" data-field="docId">
+            <span class="field-label">Doctor ID</span>
+            <span class="input-wrap">
+              <svg class="ico"><use href="#i-card"/></svg>
+              <input type="text" id="docId" placeholder="MP-DOC-1042" autocomplete="off" />
+            </span>
+            <span class="err" aria-live="polite"></span>
+          </label>
+          <label class="field" data-field="docName">
+            <span class="field-label">Doctor name</span>
+            <span class="input-wrap">
+              <svg class="ico"><use href="#i-user"/></svg>
+              <input type="text" id="docName" placeholder="Dr. Aarav Mehta" autocomplete="off" />
+            </span>
+            <span class="err" aria-live="polite"></span>
+          </label>
+          <div class="field-row">
+            <label class="field" data-field="docDept">
+              <span class="field-label">Department</span>
+              <span class="input-wrap">
+                <svg class="ico"><use href="#i-building"/></svg>
+                <select id="docDept">
+                  <option value="">Select department</option>
+                  <option>Cardiology</option>
+                  <option>Neurology</option>
+                  <option>Orthopaedics</option>
+                  <option>Obstetrics &amp; Gynaecology</option>
+                  <option>Paediatrics</option>
+                  <option>Dermatology</option>
+                  <option>General Medicine</option>
+                  <option>Dentistry</option>
+                  <option>Ophthalmology</option>
+                  <option>Radiology</option>
+                </select>
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label class="field" data-field="docCode">
+              <span class="field-label">Access code</span>
+              <span class="input-wrap">
+                <svg class="ico"><use href="#i-lock"/></svg>
+                <input type="password" id="docCode" placeholder="••••" inputmode="numeric" maxlength="6" autocomplete="off" />
+              </span>
+              <span class="err" aria-live="polite"></span>
+            </label>
+          </div>
+          <div class="form-msg" id="doctorMsg" aria-live="polite"></div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Enter clinical portal</button>
+          <button type="button" class="link-btn demo-doctor" data-demo-doctor>Fill demo credentials</button>
+          <p class="fineprint">Demo access code: <strong>1234</strong> · Doctor ID: <strong>MP-DOC-1042</strong></p>
+        </form>
+      </div>
+
+      <div class="doctor-view doctor-dash" id="doctorDashView" hidden>
+        <div class="dash-head">
+          <div>
+            <p class="eyebrow">Clinical portal · live</p>
+            <h2 id="dashName">Dr. Aarav Mehta</h2>
+            <p id="dashMeta">MP-DOC-1042 · Cardiology</p>
+          </div>
+          <span class="live-badge"><span class="pulse-dot"></span> On duty</span>
+        </div>
+        <div class="dash-stats">
+          <div><strong id="dashToday">0</strong><span>Today's visits</span></div>
+          <div><strong id="dashTotal">0</strong><span>Total bookings</span></div>
+          <div><strong id="dashNext">—</strong><span>Next slot</span></div>
+        </div>
+        <div class="dash-list-head">
+          <h3>Patient appointments</h3>
+          <button class="link-btn" id="dashRefresh">Refresh</button>
+        </div>
+        <div class="dash-list" id="dashList"></div>
+        <div class="dash-actions">
+          <button class="btn btn-primary" id="dashClose">Back to website</button>
+          <button class="btn btn-outline" id="dashSignOut">Sign out of portal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BOOKING OVERLAY ============ -->
+  <div class="overlay booking-overlay" id="bookingOverlay" aria-hidden="true">
+    <div class="booking-shell" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+      <header class="booking-head">
+        <div class="booking-brand">
+          <span class="brand-mark small" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M16 5v22M5 16h22" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/></svg>
+          </span>
+          <span class="booking-brand-text"><strong>MANTHAN <em>PHARMA</em></strong><small>Appointment desk</small></span>
+        </div>
+
+        <div class="step-track" id="stepTrack">
+          <div class="step active" data-step-dot="1"><span>1</span><em>Care</em></div>
+          <i class="step-line"></i>
+          <div class="step" data-step-dot="2"><span>2</span><em>Doctor</em></div>
+          <i class="step-line"></i>
+          <div class="step" data-step-dot="3"><span>3</span><em>Schedule</em></div>
+          <i class="step-line"></i>
+          <div class="step" data-step-dot="4"><span>4</span><em>Payment</em></div>
+        </div>
+
+        <button class="icon-btn overlay-close" data-close-booking aria-label="Close booking">
+          <svg class="ico"><use href="#i-close"/></svg>
+        </button>
+      </header>
+
+      <div class="booking-body" id="bookingBody">
+        <!-- STEP 1 -->
+        <section class="bstep" data-step="1">
+          <div class="bstep-head">
+            <span class="eyebrow">Step 1 of 4</span>
+            <h2 id="bookingTitle">What brings you in?</h2>
+            <p>Choose a consultation or a preventive package. Every option includes a specialist review and digital reports.</p>
+          </div>
+          <div class="care-grid" id="careGrid"></div>
+          <div class="step-note">
+            <svg class="ico"><use href="#i-shield"/></svg>
+            <span>No payment needed until your slot is confirmed. Free rescheduling up to 4 hours before.</span>
+          </div>
+        </section>
+
+        <!-- STEP 2 -->
+        <section class="bstep" data-step="2" hidden>
+          <div class="bstep-head">
+            <span class="eyebrow">Step 2 of 4</span>
+            <h2>Choose your specialist</h2>
+            <p>We've highlighted the consultants best suited to your care type. You can pick any specialist you like.</p>
+          </div>
+          <div class="filter-row" id="doctorFilters">
+            <button class="chip active" data-doc-filter="recommended">Recommended</button>
+            <button class="chip" data-doc-filter="all">All specialists</button>
+            <span class="care-chip" id="careChip"></span>
+          </div>
+          <div class="booking-doctor-grid" id="bookingDoctorGrid"></div>
+        </section>
+
+        <!-- STEP 3 -->
+        <section class="bstep" data-step="3" hidden>
+          <div class="bstep-head">
+            <span class="eyebrow">Step 3 of 4</span>
+            <h2>Pick a date &amp; time</h2>
+            <p>Slots refresh live. Choose what works for you — we'll hold it while you complete payment.</p>
+          </div>
+          <div class="schedule-grid">
+            <div class="schedule-left">
+              <div class="mini-doctor" id="scheduleDoctor"></div>
+              <div class="schedule-label">Select a date</div>
+              <div class="date-scroller" id="dateScroller"></div>
+              <div class="schedule-label">Available times <span id="selectedDateLabel"></span></div>
+              <div class="slot-grid" id="slotGrid"></div>
+              <p class="slot-note"><span class="legend-dot"></span> Slots shown in IST · 30-minute consultations</p>
+            </div>
+            <aside class="booking-summary" id="scheduleSummary"></aside>
+          </div>
+        </section>
+
+        <!-- STEP 4 -->
+        <section class="bstep" data-step="4" hidden>
+          <div class="bstep-head">
+            <span class="eyebrow">Step 4 of 4</span>
+            <h2>Review &amp; confirm</h2>
+            <p>Just one last check. Your details are safe and used only for this appointment.</p>
+          </div>
+          <div class="review-grid">
+            <div class="patient-card">
+              <h3>Patient details</h3>
+              <div class="field-row">
+                <label class="field" data-field="pName">
+                  <span class="field-label">Patient name</span>
+                  <span class="input-wrap"><svg class="ico"><use href="#i-user"/></svg><input type="text" id="pName" placeholder="Full name" /></span>
+                  <span class="err" aria-live="polite"></span>
+                </label>
+                <label class="field" data-field="pAge">
+                  <span class="field-label">Age <span class="opt">(optional)</span></span>
+                  <span class="input-wrap"><input type="number" id="pAge" min="1" max="120" placeholder="28" /></span>
+                  <span class="err" aria-live="polite"></span>
+                </label>
+              </div>
+              <label class="field" data-field="pPhone">
+                <span class="field-label">Mobile number</span>
+                <span class="input-wrap"><span class="prefix">+91</span><input type="tel" id="pPhone" inputmode="numeric" maxlength="10" placeholder="98765 43210" /></span>
+                <span class="err" aria-live="polite"></span>
+              </label>
+              <label class="field" data-field="pNotes">
+                <span class="field-label">Anything we should know? <span class="opt">(optional)</span></span>
+                <span class="input-wrap textarea"><textarea id="pNotes" rows="3" placeholder="Symptoms, allergies, or accessibility needs…"></textarea></span>
+              </label>
+              <p class="fineprint"><svg class="ico"><use href="#i-lock"/></svg> Your health information is encrypted and never shared without consent.</p>
+            </div>
+            <aside class="booking-summary review-summary" id="reviewSummary"></aside>
+          </div>
+        </section>
+
+        <!-- STEP 5 : PAYMENT -->
+        <section class="bstep" data-step="5" hidden>
+          <div class="pay-wrap">
+            <div class="pay-pane pay-method" id="payMethodView">
+              <div class="gpay-head">
+                <div class="gpay-brand">
+                  <span class="gpay-g">G</span>
+                  <span><strong>Google Pay</strong><small>Secure UPI checkout</small></span>
+                </div>
+                <span class="secure-badge"><svg class="ico"><use href="#i-lock"/></svg> 256-bit secure</span>
+              </div>
+
+              <div class="pay-amount-block">
+                <span>Amount to pay</span>
+                <strong id="payAmount">₹0</strong>
+                <small>MANTHAN PHARMA · <span id="payRef">MP-APPT</span></small>
+              </div>
+
+              <div class="pay-section">
+                <span class="schedule-label">Choose a UPI app</span>
+                <div class="method-list" id="methodList">
+                  <label class="method active">
+                    <input type="radio" name="payMethod" value="gpay" checked />
+                    <span class="method-logo gpay-g">G</span>
+                    <span class="method-text"><strong>Google Pay</strong><small>tanishq@okhdfcbank</small></span>
+                    <span class="method-check"><svg class="ico"><use href="#i-check"/></svg></span>
+                  </label>
+                  <label class="method">
+                    <input type="radio" name="payMethod" value="phonepe" />
+                    <span class="method-logo phonepe">Pe</span>
+                    <span class="method-text"><strong>PhonePe</strong><small>UPI · instant</small></span>
+                    <span class="method-check"><svg class="ico"><use href="#i-check"/></svg></span>
+                  </label>
+                  <label class="method">
+                    <input type="radio" name="payMethod" value="paytm" />
+                    <span class="method-logo paytm">P</span>
+                    <span class="method-text"><strong>Paytm</strong><small>UPI · instant</small></span>
+                    <span class="method-check"><svg class="ico"><use href="#i-check"/></svg></span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="field bank-field">
+                <span class="field-label">Bank account</span>
+                <span class="input-wrap">
+                  <svg class="ico"><use href="#i-card"/></svg>
+                  <select id="bankSelect">
+                    <option>HDFC Bank ·•• 4821</option>
+                    <option>State Bank of India ·•• 7710</option>
+                    <option>ICICI Bank ·•• 2096</option>
+                    <option>Axis Bank ·•• 5534</option>
+                    <option>Kotak Mahindra ·•• 1187</option>
+                  </select>
+                </span>
+              </label>
+
+              <button class="btn btn-primary btn-block btn-lg" id="payBtn">
+                <svg class="ico"><use href="#i-lock"/></svg> Pay <span id="payBtnAmount">₹0</span> securely
+              </button>
+              <p class="fineprint center">By paying you agree to the cancellation policy. No card details are stored.</p>
+            </div>
+
+            <aside class="booking-summary pay-side" id="paymentSummary"></aside>
+
+            <!-- PIN -->
+            <div class="pin-view" id="pinView" hidden>
+              <button class="link-btn pin-back" id="pinBack">
+                <svg class="ico"><use href="#i-arrow" style="transform:rotate(180deg)"/></svg> Back to payment
+              </button>
+              <span class="gpay-g pin-g">G</span>
+              <h3>Enter UPI PIN</h3>
+              <p>Paying <strong id="pinAmount">₹0</strong> to <strong>MANTHAN PHARMA</strong></p>
+              <div class="pin-boxes" id="pinBoxes" aria-label="Four digit UPI PIN">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="keypad" id="keypad">
+                <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+                <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+                <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+                <button class="key-empty" disabled></button><button data-key="0">0</button><button data-key="del" aria-label="Delete digit">⌫</button>
+              </div>
+              <p class="fineprint center">Demo mode — any 4 digits will work.<br />Never share your real UPI PIN with anyone.</p>
+              <div class="bank-footer"><svg class="ico"><use href="#i-shield"/></svg> Secured by your bank · UPI</div>
+            </div>
+
+            <!-- AUTHENTICATING -->
+            <div class="auth-view" id="authView" hidden>
+              <div class="auth-orbit">
+                <span class="orbit-ring"></span>
+                <span class="orbit-ring r2"></span>
+                <span class="orbit-core"><svg class="ico"><use href="#i-lock"/></svg></span>
+              </div>
+              <h3>Authenticating…</h3>
+              <p class="auth-sub">Please wait while we confirm your payment.<br />Do not close this window.</p>
+              <div class="auth-progress"><i></i></div>
+              <p class="auth-note" id="authNote">Contacting your bank…</p>
+              <div class="auth-steps">
+                <span class="done" id="authStep1"><svg class="ico"><use href="#i-check"/></svg> PIN verified</span>
+                <span id="authStep2"><span class="tiny-spinner"></span> Confirming slot</span>
+                <span id="authStep3"><span class="tiny-spinner"></span> Issuing receipt</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STEP 6 : SUCCESS -->
+        <section class="bstep" data-step="6" hidden>
+          <div class="success-view">
+            <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+            <div class="tick-wrap">
+              <svg class="tick-svg" viewBox="0 0 120 120" aria-hidden="true">
+                <circle class="tick-circle" cx="60" cy="60" r="52" />
+                <path class="tick-check" d="M36 62 L53 78 L85 43" />
+              </svg>
+              <span class="tick-glow"></span>
+            </div>
+            <p class="eyebrow success-eyebrow">Payment successful · Appointment confirmed</p>
+            <h2>You're booked, <span id="successName">friend</span>.</h2>
+            <p class="success-sub">A confirmation and calendar invite are on their way. We'll see you soon.</p>
+
+            <div class="ticket">
+              <div class="ticket-head">
+                <div>
+                  <span class="ticket-label">Booking ID</span>
+                  <strong id="successId">MP-00000000-0000</strong>
+                </div>
+                <span class="ticket-status"><svg class="ico"><use href="#i-check"/></svg> Confirmed</span>
+              </div>
+              <div class="ticket-grid">
+                <div><span class="ticket-label">Care</span><strong id="successCare">Full Body Checkup</strong></div>
+                <div><span class="ticket-label">Specialist</span><strong id="successDoctor">Dr. Aarav Mehta</strong></div>
+                <div><span class="ticket-label">Date</span><strong id="successDate">Thu, 5 Nov</strong></div>
+                <div><span class="ticket-label">Time</span><strong id="successTime">4:30 PM</strong></div>
+                <div><span class="ticket-label">Patient</span><strong id="successPatient">Tanishq</strong></div>
+                <div><span class="ticket-label">Paid</span><strong id="successAmount">₹2,528</strong></div>
+              </div>
+              <div class="ticket-foot">
+                <svg class="ico"><use href="#i-pin"/></svg>
+                12 Wellness Avenue, Indiranagar, Bengaluru · Block B, Level 2
+              </div>
+            </div>
+
+            <div class="success-actions">
+              <button class="btn btn-primary" id="addCalendar"><svg class="ico"><use href="#i-calendar"/></svg> Add to calendar</button>
+              <button class="btn btn-outline" id="downloadReceipt"><svg class="ico"><use href="#i-download"/></svg> Download receipt</button>
+              <button class="btn btn-ghost" id="bookAnother">Book another</button>
+              <button class="btn btn-soft" id="successDone">Done</button>
+            </div>
+            <p class="success-note"><svg class="ico"><use href="#i-phone"/></svg> Need to change something? Call 1800 200 300 — free rescheduling up to 4 hours before.</p>
+          </div>
+        </section>
+      </div>
+
+      <footer class="booking-foot" id="bookingFoot">
+        <button class="btn btn-ghost" id="bookBack">
+          <svg class="ico" style="transform:rotate(180deg)"><use href="#i-arrow"/></svg> Back
+        </button>
+        <div class="foot-total">
+          <span>Total</span>
+          <strong id="footTotal">₹0</strong>
+          <small>incl. all taxes</small>
+        </div>
+        <button class="btn btn-primary" id="bookNext">
+          Continue <svg class="ico"><use href="#i-arrow"/></svg>
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ============ MY VISITS OVERLAY ============ -->
+  <div class="overlay visits-overlay" id="visitsOverlay" aria-hidden="true">
+    <div class="visits-card" role="dialog" aria-modal="true" aria-labelledby="visitsTitle">
+      <header class="visits-head">
+        <div>
+          <p class="eyebrow">Your care record</p>
+          <h2 id="visitsTitle">My appointments</h2>
+        </div>
+        <button class="icon-btn overlay-close" data-close-visits aria-label="Close appointments">
+          <svg class="ico"><use href="#i-close"/></svg>
+        </button>
+      </header>
+      <div class="visits-list" id="visitsList"></div>
+      <footer class="visits-foot">
+        <button class="btn btn-primary" data-book-now>Book a new appointment</button>
+        <button class="btn btn-ghost" data-close-visits>Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="false"></div>
+
+  <noscript>
+    <div style="padding:24px;text-align:center;background:#0b1f1d;color:#fff">Please enable JavaScript to book an appointment.</div>
+  </noscript>
+
+  <script src="app.js"></script>
+</body>
+</html>
